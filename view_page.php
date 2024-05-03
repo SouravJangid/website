@@ -16,13 +16,15 @@ if (isset($_POST['layout'])) {
 if (isset($_POST['add_to_wishlist'])) {
     $id = unique_id();
     $product_id = $_POST['product_id'];
+    
+    
+    $varify_wishlist = $conn->prepare("SELECT * FROM `wishlist` WHERE  user_id ='$user_id' AND product_id ='$product_id'");
+    $result =$varify_wishlist->execute();
+    echo $result;
 
-    $varify_wishlist = $conn->prepare("SELECT * FROM `wishlist` WHERE  user_id = ? AND product_id =?");
-    $verify_wishlist->execute([$user_id, $product_id]);
 
     $cart_num = $conn->prepare("SELECT * FROM `cart`  WHERE  user_id = ? AND product_id =? ");
     $cart_num->execute([$user_id, $product_id]);
-
 
 
     if ($varify_wishlist->rowCount() > 0) {
@@ -115,7 +117,7 @@ if (isset($_POST['add_to_cart'])) {
                                     <?php echo $fetch_products['name'] ?>
                                 </div>
                                 <div class="detail">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id labore ad reiciendis praesentium. Repudiandae excepturi sunt eligendi, error voluptates autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vitae ipsum magnam tempore saepe aliquam, veniam minima debitis! Nemo, omnis.
+                                    <p><?php echo $fetch_products['product_detail'] ?>
                                     </p>
                                 </div>
                                 <input type="hidden" name="product_id" value="<?php echo $fetch_products['id']; ?>">
