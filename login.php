@@ -63,12 +63,6 @@ if (isset($_POST['submit'])) {
                     <input type="password" name="pass" required placeholder="enter your password " maxlength="50" oninput="this.value=this.value.replace(/\s/g,'')">
 
                 </div>
-                <div class="input-field">
-                    <p for="confirmPassword">confirm password <sup id="star-3">*</sup></p>
-                    <input type="password" name="pass" required placeholder="enter your password " maxlength="50" oninput="this.value=this.value.replace(/\s/g,'')">
-                    <!-- /*THIS THING */ -->
-
-                </div>
                 <input type="submit" name="submit" value="login now" class="btn">
                 <p>do not have an account? <a href="register.php">register now</a></p>
             </form>

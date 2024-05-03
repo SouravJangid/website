@@ -1,30 +1,33 @@
 <?php
 include '../components/connection.php';
+include '../components/alert.php';
 
 session_start();
 // login admin
 if (isset($_POST['submit'])) {
-    $warning_msg[] = "incorrect username or password";
-    $email = $_POST['admin'];
-    $email = filter_var($email, FILTER_SANITIZE_STRING);
+    // $warning_msg[] = "incorrect username or password";
+
+
+    $admin = $_POST['admin'];
+    $admin = filter_var($admin, FILTER_SANITIZE_STRING);
+
     $pass = $_POST['pass'];
     $pass = filter_var($pass, FILTER_SANITIZE_STRING);
+    
+    $stmt = $conn->prepare("SELECT * FROM admin WHERE admin_name = '$admin' AND password = '$pass'");
+    $stmt->execute();       
+    $row = $stmt->fetch(PDO::FETCH_ASSOC); 
 
-    $select_user = $conn->prepare("SELECT * FROM `admin` WHERE admin_name=? And password=? ");
-    $select_user->execute([$email, $pass]);
-    // $row = $select_user->fetch(PDO::FETCH_ASSOC); 
-    echo $select_user;
-    // if(($email === $select_user['admin_name'])&&($pass === $select_user['password'])){
-    //     echo "done";
-    // }
-
-
-    // if ($select_user->rowCount() > 0) {
-    //     // $_SESSION['admin_name'] = $row['name'];
-    //     header('location:update_product.php');
-    // } else {
-    //     $warning_msg[] = "incorrect username or password";
-    // }
+    
+    if ($stmt->rowCount()>0 ) {
+        $_SESSION['access']='yes';
+        $_SESSION['admin_name'] = $admin;
+        header('location:update_product.php');
+        die();
+    } else {
+        $alert = "Incorrect username or password Try again";
+        echo "<script>alert('$alert');</script>";
+    }
 }
 
 ?>
@@ -32,7 +35,7 @@ if (isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -43,9 +46,9 @@ if (isset($_POST['submit'])) {
 
     <script src="script.js"></script>
     <title>Admin Panal </title>
-    </head>
+</head>
 
-    <body>
+<body>
     <div class="main-container">
         <section class="form-container">
             <div class="title">
@@ -69,6 +72,6 @@ if (isset($_POST['submit'])) {
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
-    </body>
+</body>
 
 </html>;
