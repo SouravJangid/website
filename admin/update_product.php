@@ -44,17 +44,17 @@ if (isset($_POST['delete'])) {
 
 <body>
 
-    <h1>
+    <div  >
         <form method="post">
             <?php if ($_SESSION) {
-                echo '<button type="submit" name="logout" class="logout-btn">log out</button>';
+                echo '<button type="submit" style=" position:absolute; left:90%; background-color:black;" name="logout" class="logout-btn">log out</button>';
             } ?>
         </form>
-    </h1><br>
+    </div><br>
 
     <a style="color:black; text-decoration:none; background-color: greenyellow; cursor:pointer; padding:10px; border-radius:10px; " href="addItem.php">Add new Item</a><br><br>
 
-    <div class=" p-1">
+    <div style="padding-left: 200px;">
         <table class="table">
             <thead class="thead-dark">
                 <tr>

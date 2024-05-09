@@ -70,17 +70,17 @@ if (isset($_POST['submit'])) {
     <title>UpdateProducts</title>
 </head>
 
-<center>
+
 
     <body>
 
-        <h1>
-            <form method="post">
-                <?php if ($_SESSION) {
-                    echo '<button type="submit" name="logout" class="logout-btn">log out</button>';
-                } ?>
-            </form>
-        </h1><br>
+    <div  >
+        <form method="post">
+            <?php if ($_SESSION) {
+                echo '<button type="submit" style=" position:absolute; left:90%; background-color:black;" name="logout" class="logout-btn">log out</button>';
+            } ?>
+        </form>
+    </div><br>
 
         <a style="color:black; text-decoration:none; background-color: greenyellow; cursor:pointer; padding:10px; border-radius:10px; " href="update_product.php">Show all products</a><br><br>
 
@@ -127,6 +127,6 @@ if (isset($_POST['submit'])) {
             </form>
         </div>
     </body>
-</center>
+
 
 </html>
