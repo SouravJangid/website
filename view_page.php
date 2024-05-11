@@ -18,9 +18,8 @@ if (isset($_POST['add_to_wishlist'])) {
     $product_id = $_POST['product_id'];
     
     
-    $varify_wishlist = $conn->prepare("SELECT * FROM `wishlist` WHERE  user_id ='$user_id' AND product_id ='$product_id'");
-    $result =$varify_wishlist->execute();
-    echo $result;
+    $varify_wishlist = $conn->prepare("SELECT * FROM `wishlist` WHERE  user_id = ? AND product_id = ? ");
+    $varify_wishlist->execute([$user_id, $product_id]);
 
 
     $cart_num = $conn->prepare("SELECT * FROM `cart`  WHERE  user_id = ? AND product_id =? ");
@@ -45,6 +44,8 @@ if (isset($_POST['add_to_wishlist'])) {
 
 // adding products in cart
 if (isset($_POST['add_to_cart'])) {
+     
+    
     $id = unique_id();
     $product_id = $_POST['product_id'];
 
@@ -54,11 +55,11 @@ if (isset($_POST['add_to_cart'])) {
     $varify_cart = $conn->prepare("SELECT * FROM `cart`  WHERE  user_id = ? AND product_id =? ");
     $varify_cart->execute([$user_id, $product_id]);
 
-    $max_cart_items = $conn->prepare("SELECT * FROM `cart`WHERE user_id = ?");
+    $max_cart_items = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
     $max_cart_items->execute([$user_id]);
 
 
-    if ($varify_wishlist->rowCount() > 0) {
+    if ($varify_cart->rowCount() > 0) {
         $warning_msg[] = 'product already exist in your wishlist';
     } else if ($max_cart_items->rowCount() > 20) {
         $warning_msg[] = 'cart is full!';

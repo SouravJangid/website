@@ -1,4 +1,5 @@
 <?php
+
 include 'components/connection.php';
 
 session_start();
@@ -30,6 +31,7 @@ if (isset($_POST['layout'])) {
 
 <body>
     <?php include './components/header.php'; ?>
+
     <div class="main">
 
 
@@ -108,7 +110,7 @@ if (isset($_POST['layout'])) {
             <div class="title">
                 <img src="img/download.png" class="logo" alt="">
                 <h1>contact detail</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Any kind of help just contact us.</p>
             </div>
             <div class="box-container">
                 <div class="box">
@@ -122,7 +124,7 @@ if (isset($_POST['layout'])) {
                     <i class="bx bxs-map-call"></i>
                     <div>
                         <h4>phone:</h4>
-                        <p>00000000000000</p>
+                        <p><span>+95</span> 9374 9202</p>
                     </div>
                 </div>
 
@@ -130,7 +132,7 @@ if (isset($_POST['layout'])) {
                     <i class="bx bxs-map-email"></i>
                     <div>
                         <h4>email</h4>
-                        <p>example@gmail.com</p>
+                        <p>yashyashithakur885@gmail.com</p>
                     </div>
                 </div>
 

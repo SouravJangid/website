@@ -38,7 +38,7 @@ if (isset($_POST['logout'])) {
                     </div>
                     <div class="slider-detail">
                         <h1>Who is this man</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores laudantium eligendi nihil sint nesciunt porro laborum suscipit similique, magnam omnis. Iusto, harum ratione.</p>
+                        <p>this product is very healthy for body</p>
                         <a href="view_products.php" class="btn">shop now</a>
                     </div>
                     <div class="hero-dec-top"></div>
@@ -51,7 +51,7 @@ if (isset($_POST['logout'])) {
                     </div>
                     <div class="slider-detail">
                         <h1>Welcome to my shop</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores laudantium eligendi nihil sint nesciunt porro laborum suscipit similique, magnam omnis. Iusto, harum ratione.</p>
+                        <p>this product is very healthy for body</p>
                         <a href="view_products.php" class="btn">shop now</a>
                     </div>
                     <div class="hero-dec-top"></div>
@@ -64,7 +64,7 @@ if (isset($_POST['logout'])) {
                     </div>
                     <div class="slider-detail">
                         <h1>Who is this man</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores laudantium eligendi nihil sint nesciunt porro laborum suscipit similique, magnam omnis. Iusto, harum ratione.</p>
+                        <p>this product is very healthy for body</p>
                         <a href="view_products.php" class="btn">shop now</a>
                     </div>
                     <div class="hero-dec-top"></div>
@@ -77,7 +77,7 @@ if (isset($_POST['logout'])) {
                     </div>
                     <div class="slider-detail">
                         <h1>Who is this man</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores laudantium eligendi nihil sint nesciunt porro laborum suscipit similique, magnam omnis. Iusto, harum ratione.</p>
+                        <p>this product is very healthy for body</p>
                         <a href="view_products.php" class="btn">shop now</a>
                     </div>
                     <div class="hero-dec-top"></div>
@@ -90,7 +90,7 @@ if (isset($_POST['logout'])) {
                     </div>
                     <div class="slider-detail">
                         <h1>Who is this man</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores laudantium eligendi nihil sint nesciunt porro laborum suscipit similique, magnam omnis. Iusto, harum ratione.</p>
+                        <p>this product is very healthy for body</p>
                         <a href="view_products.php" class="btn">shop now</a>
                     </div>
                     <div class="hero-dec-top"></div>
@@ -111,25 +111,25 @@ if (isset($_POST['logout'])) {
                 <div class="box">
                     <img src="img/thumb.jpg" alt="">
                     <h3>Green tea</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>this product is very healthy for body</p>
                     <i class="bx bx-chevron-right"></i>
                 </div>
                 <div class="box">
                     <img src="img/thumb0.jpg" alt="">
                     <h3>Green tea</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>this product is very healthy for body</p>
                     <i class="bx bx-chevron-right"></i>
                 </div>
                 <div class="box">
                     <img src="img/thumb1.jpg" alt="">
                     <h3>Green tea</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>this product is very healthy for body</p>
                     <i class="bx bx-chevron-right"></i>
                 </div>
                 <div class="box">
                     <img src="img/thumb2.jpg" alt="">
                     <h3>Green tea</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>this product is very healthy for body</p>
                     <i class="bx bx-chevron-right"></i>
                 </div>
 
@@ -147,7 +147,7 @@ if (isset($_POST['logout'])) {
                     <img src="img/download.png" alt="">
                     <span>healthy tea</span>
                     <h1>save up to 50% off</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ab quasi aperiam et. Voluptates, eaque? Recusandae nihil ex quo perferendis labore iusto repudiandae autem sapiente? Vitae officia dolores ipsum in veritatis atque!</p>
+                    <p> save your money and stay healthy</p>
                 </div>
             </div>
         </section>

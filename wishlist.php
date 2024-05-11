@@ -104,24 +104,24 @@ if (isset($_POST['delete_item'])) {
                             <form action="" method="post" class="box">
 
                                 <input type="hidden" name="wishlist_id" value="<?= $fetch_wishlist['id'] ?>">
-                                <img src="image/<?= $fetch_product['image']; ?>" alt="">
+                                <img src="image/<?= $ftch_products['image']; ?>" alt="">
                                 <div class="button">
                                     <button type="submit" name="add_to_cart"><i class="bx bx-cart"></i> </button>
 
-                                    <a href="view_page.php?pid=<?php echo $fetch_products['id']; ?>" class="bx bxs-show"></a>
+                                    <a href="view_page.php?pid=<?php echo $ftch_products['id']; ?>" class="bx bxs-show"></a>
 
                                     <button type="submit" name="delete_item" onclick="return confirm('delete this item')"><i class="bx bx-x"></i> </button>
 
                                 </div>
                                 <h3 class="name">
-                                    <?= $fetchproducts['name'] ?>
+                                    <?= $ftch_products['name'] ?>
                                 </h3>
-                                <input type="hidden" name="product_id" value="<?= $fetch_products['id']; ?>">
+                                <input type="hidden" name="product_id" value="<?= $ftch_products['id']; ?>">
 
                                 <div class="flex">
-                                    <p class="price">price $<?= $fetch_products['id'] ?> /-</p>
+                                    <p class="price">price $<?= $ftch_products['price'] ?> /-</p>
                                 </div>
-                                <a href="checkout.php?get_id=<?= $fetch_products['id']; ?>" class="btn">buy now</a>
+                                <a href="checkout.php?get_id=<?= $ftch_products['id']; ?>" class="btn">buy now</a>
                             </form>
 
 

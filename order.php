@@ -40,7 +40,7 @@ if (isset($_POST['layout'])) {
             <div class="title">
                 <img src="img/download.png" class="logo" alt="">
                 <h1>my order</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, aut? Similique, itaque. Obcaecati quidem sint iusto iste accusamus veniam cum.</p>
+                <p>Pay for order your products.</p>
             </div>
             <div class="box-container">
                 <?php

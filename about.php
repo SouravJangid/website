@@ -78,7 +78,7 @@ if (isset($_POST['layout'])) {
                 <div class="title">
                     <img src="img/download.png" class="logo" alt="">
                     <h1>why choose us</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus suscipit ab, natus sit ullam amet dolorum voluptates, hic ipsa harum nihil vel dicta.</p>
+                    <p>This is just ranodm text.</p>
 
                 </div>
                 <div class="box-container">
@@ -122,7 +122,7 @@ if (isset($_POST['layout'])) {
                     </div>
                     <div class="detail">
                         <h1>visit our beautiful showroom!</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur libero minus error eligendi perferendis sunt reiciendis fuga harum dolores, accusantium ipsam blanditiis id.</p>
+                        <p>it is just random text for testing.</p>
                         <a href="view_products.php" class="btn">shop now</a>
                     </div>
                 </div>
@@ -131,27 +131,27 @@ if (isset($_POST['layout'])) {
                 <div class="title">
                     <img src="img/download.png" alt="">
                     <h1>what people say about us</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem nostrum corrupti ipsum eveniet facere velit quo, error tempora laborum, vitae recusandae dolore molestias!
+                    <>this is just random text for testing.
                     </p>
                 </div>
                 <div class="container">
                     <div class="testimonial-item active">
                         <img src="img/01.jpg" alt="">
                         <h1>sara smit</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dolor. Maxime aut rerum quod aspernatur officiis soluta placeat quo recusandae alias similique cumque, laborum consectetur temporibus eius, voluptate explicabo, vel iure dignissimos odio.</p>
+                        <p>This is just random text.</p>
 
                     </div>
 
                     <div class="testimonial-item ">
                         <img src="img/02.jpg" alt="">
                         <h1>hary porter</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dolor. Maxime aut rerum quod aspernatur officiis soluta placeat quo recusandae alias similique cumque, laborum consectetur temporibus eius, voluptate explicabo, vel iure dignissimos odio.</p>
+                        <p>This is just random text.</p>
 
                     </div>
                     <div class="testimonial-item ">
                         <img src="img/03.jpg" alt="">
                         <h1>selena ansari</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dolor. Maxime aut rerum quod aspernatur officiis soluta placeat quo recusandae alias similique cumque, laborum consectetur temporibus eius, voluptate explicabo, vel iure dignissimos odio.</p>
+                        <p>This is just random text.</p>
 
                     </div>
 

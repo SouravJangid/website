@@ -83,13 +83,14 @@ if (isset($_POST['empty_cart'])) {
         <section class="products">
             <h1 class="title">products add in cart</h1>
             <div class="box-container">
+           
                 <?php
                 $grand_total = 0;
                 $select_cart = $conn->prepare("SELECT * FROM `cart` WHERE `user_id` =?");
                 $select_cart->execute([$user_id]);
                 if ($select_cart->rowCount() > 0) {
                     while ($fetch_cart = $select_cart->fetch(PDO::FETCH_ASSOC)) {
-                        $select_products = $conn->prepare("SELECT * FROM `products` WHERE id=? ");
+                        $select_products = $conn->prepare("SELECT * FROM `products` WHERE `id` =? ");
                         $select_products->execute([$fetch_cart['product_id']]);
                         if ($select_products->rowCount() > 0) {
 
@@ -99,12 +100,14 @@ if (isset($_POST['empty_cart'])) {
                             <form action="" method="post" class="box">
 
                                 <input type="hidden" name="cart_id" value="<?= $fetch_cart['id'] ?>">
-                                <img src="image/<?= $fetch_product['image']; ?>" class="img" alt="">
+                                
+                                <img src="./image/<?= $ftch_products['image']; ?>" class="img" alt="">
+
                                 <h3 class="name">
-                                    <?= $fetchproducts['name'] ?>
+                                    <?= $ftch_products['name'] ?>
                                 </h3>
                                 <div class="flex">
-                                    <p class="price">price $<?= $fetch_products['id'] ?> /-</p>
+                                    <p class="price">price $<?= $ftch_products['price'] ?> /-</p>
                                     <input type="hidden" name="qty" required min="1" value="<?= $fetch_cart['qty'] ?>" max="99" maxlength="2" class="qty">
                                     <button type="submit" name="update_cart" class="bx bxs-edit fa-edit"></button>
                                 </div>
